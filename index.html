@@ -8,46 +8,82 @@
 </head>
 <body>
     <header>
-        <h1>Al Nkhbah Center</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#features">الميزات</a></li>
-                <li><a href="#contact">التواصل</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Al Nkhbah Center</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#features">الميزات</a></li>
+                    <li><a href="#contact">التواصل</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="home">
-        <h2>مرحبا بكم في تطبيق Al Nkhbah Center</h2>
-        <p>نقدم لك تجربة فريدة لتحسين صحتك والتواصل مع الأطباء.</p>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>مرحبا بكم في تطبيق Al Nkhbah Center</h2>
+            <p>تحسين صحتك من خلال حلول تغذوية وعلاجية متكاملة.</p>
+            <a href="#contact" class="btn-primary">تواصل معنا</a>
+        </div>
     </section>
     <section id="features">
-        <h2>الميزات</h2>
-        <ul>
-            <li>صفحة رئيسية</li>
-            <li>صفحة تسجيل دخول وتسجيل</li>
-            <li>ميزة الدردشة</li>
-            <li>قياس الصحة</li>
-            <li>خطط غذائية شخصية</li>
-            <li>مكتبة فيديو</li>
-            <li>قسم المعلومات</li>
-        </ul>
+        <div class="container">
+            <h2>الميزات الرئيسية</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>صفحة رئيسية</h3>
+                    <p>واجهة مستخدم سهلة وسريعة للوصول إلى جميع الخدمات.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>تسجيل دخول وتسجيل</h3>
+                    <p>أنظمة تسجيل دخول وتسجيل مرنة مع خيارات "تذكرني".</p>
+                </div>
+                <div class="feature-item">
+                    <h3>ميزة الدردشة</h3>
+                    <p>تواصل مباشر مع فريق الدعم والأطباء.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>قياس الصحة</h3>
+                    <p>أدوات لمتابعة المؤشرات الصحية وإدارتها.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>خطط غذائية شخصية</h3>
+                    <p>خطط غذائية مخصصة لتلبية احتياجاتك الفردية.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>مكتبة فيديو</h3>
+                    <p>مقاطع فيديو تعليمية وإرشادية.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>قسم المعلومات</h3>
+                    <p>مقالات ومعلومات صحية متعمقة.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>الدعم المباشر</h3>
+                    <p>تواصل مباشر مع الطبيبة أمينة البغدادي.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact">
-        <h2>التواصل مع الطبيبة أمينة البغدادي</h2>
-        <p>يمكنك التواصل مع الطبيبة أمينة البغدادي عبر النموذج أدناه.</p>
-        <form action="#" method="post">
-            <label for="name">الاسم:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">الرسالة:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">إرسال</button>
-        </form>
+        <div class="container">
+            <h2>تواصل مع الطبيبة أمينة البغدادي</h2>
+            <p>لأي استفسارات أو استشارات، يمكنك التواصل معنا عبر النموذج أدناه.</p>
+            <form action="#" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">إرسال</button>
+            </form>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2024 Al Nkhbah Center. جميع الحقوق محفوظة.</p>
+        <div class="container">
+            <p>&copy; 2024 Al Nkhbah Center. جميع الحقوق محفوظة.</p>
+        </div>
     </footer>
 </body>
 </html>
