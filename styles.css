@@ -1,25 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     margin: 0;
     padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #f4f4f4;
 }
 
+/* Container for centering content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header styles */
 header {
     background: #007bff;
     color: #fff;
-    padding: 1rem;
-    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -30,53 +47,101 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-section {
+/* Hero section */
+.hero {
+    background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Features section */
+#features {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 200px;
+    background: #f9f9f9;
     padding: 20px;
-    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-h2 {
+.feature-item h3 {
     color: #007bff;
 }
 
+/* Contact form */
 form {
     margin-top: 20px;
 }
 
 form label {
     display: block;
-    margin: 5px 0;
+    margin: 10px 0 5px;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-button {
+form button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
+form button:hover {
     background-color: #0056b3;
 }
 
+/* Footer styles */
 footer {
     background: #007bff;
     color: #fff;
     text-align: center;
-    padding: 1rem;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    padding: 1rem 0;
 }
